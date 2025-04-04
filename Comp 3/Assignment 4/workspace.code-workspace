@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "..\\Assignment3"
+		},
+		{
+			"path": "..\\Lab2"
+		},
+		{
+			"path": "..\\Lab4"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Lab12"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			""
+		]
+	}
+}
