@@ -1,0 +1,7 @@
+var x;
+
+def id(x) {
+    let x = 3;
+
+    return x;
+}

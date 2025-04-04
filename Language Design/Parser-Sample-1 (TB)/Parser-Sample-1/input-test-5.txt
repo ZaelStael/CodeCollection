@@ -1,0 +1,39 @@
+var a
+for (var b; b < 10 ; let b = b + 1) {
+       let a = 2 * ( b + 3 )
+       write a
+}
+ 
+###########################################
+ 
+def sum(c, d) {
+    var e
+    let e = c + d
+    write e * 2
+    return d + 1 / ( c / d )
+}
+ 
+var result
+let result <- sum(c * 5, 0)
+ 
+ 
+###########################################
+ 
+var f
+var g
+var h
+if ( f < 1 + g * h ) {
+    for (var i ; i < 10 ; let i = i + 1) {
+        var j
+        if ( f == g  / 2 ) {
+            let j = f
+            let g = -j * f
+        }
+    }
+} else {
+    ### If the previous section is included, the line below would 
+    ### work anywhere any other statement would work. For example:
+    #let result <- sum(f * 5, 0)
+﻿
+    write h
+}

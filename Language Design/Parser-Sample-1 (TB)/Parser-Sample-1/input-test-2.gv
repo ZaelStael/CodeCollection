@@ -1,0 +1,40 @@
+digraph ParseTree {
+graph[ranksep=1];
+node[shape=rect,style=dotted];
+
+0[label="Parse Tree",shape=plain];
+0->{1[label="<PROGRAM>"]};
+1->{2[label="<STMT_LIST>"]};
+2->{3[label="<STMT>"]};
+3->{4[label="<VAR_DECL>"]};
+4->{5[label="<STMT_KEYS>"]};
+5->{6[label="var",shape=oval,style=bold]};
+4->{7[label="<UNIDENTIFIED_TOKEN>"]};
+7->{8[label="x",shape=oval,style=bold]};
+4->{9[label="<CONJUNCTION>"]};
+9->{10[label=";",shape=oval,style=bold]};
+2->{11[label="<STMT_LIST>"]};
+11->{12[label="<STMT>"]};
+12->{13[label="<LET_STMT>"]};
+13->{14[label="<STMT_KEYS>"]};
+14->{15[label="let",shape=oval,style=bold]};
+13->{16[label="<UNIDENTIFIED_TOKEN>"]};
+16->{17[label="x",shape=oval,style=bold]};
+13->{18[label="<LET_TAIL>"]};
+18->{19[label="<EQUAL>"]};
+19->{20[label="=",shape=oval,style=bold]};
+18->{21[label="<EXPR>"]};
+21->{22[label="<TERM>"]};
+22->{23[label="<FACTOR>"]};
+23->{24[label="<NUMBER>"]};
+24->{25[label="3",shape=oval,style=bold]};
+22->{26[label="<FACTOR_TAIL>"]};
+26->{27[label="&epsilon;",shape=plain]};
+21->{28[label="<TERM_TAIL>"]};
+28->{29[label="<CONJUNCTION>"]};
+29->{30[label=";",shape=oval,style=bold]};
+11->{31[label="<STMT_LIST>"]};
+31->{32[label="&epsilon;",shape=plain]};
+1->{33[label="<$$>"]};
+33->{34[label="$$ (End of Input)",shape=oval,style=bold]};
+}

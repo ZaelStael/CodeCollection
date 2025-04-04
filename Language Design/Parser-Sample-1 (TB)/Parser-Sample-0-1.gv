@@ -1,0 +1,11 @@
+digraph ParseTree {
+graph[ranksep=1];
+node[shape=rect,style=dotted];
+
+0[label="Parse Tree",shape=plain];
+0->{1[label="<PROGRAM>"]};
+1->{2[label="<STMT_LIST>"]};
+2->{3[label="&epsilon;",shape=plain]};
+1->{"SYNTAX ERROR: Expected '$$'
+but found '{' (PAREN)."[shape=plain,fontcolor=red]};
+}
